@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片的上传和下载</title>
+</head>
+<body>
+
+<form action="http://127.0.0.1:8000/api/v1.0/image/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="xxx">
+    <button type="submit">上传</button>
+</form>
+
+</body>
+</html>
