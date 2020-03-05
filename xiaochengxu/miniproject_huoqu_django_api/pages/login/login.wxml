@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<text>pages/login/login.wxml</text>
+<!-- 第一种方法: -->
+<view>
+  <button class="weui-btn" type="primary" bindtap='getCookie'>获取cookie并且保存到本地</button>
+  <button class="weui-btn" type="primary" bindtap='sendCookie'>读取本地cookie并发送cookie</button>
+  <button class="weui-btn" type="primary" bindtap='authorize'>授权登陆</button>
+</view>
+
+<!-- 第二种方法: -->
+<!-- <view class="page__bd page__bd_spacing">
+      <button class="weui-btn" type="primary" bindtap='getCookie'>获取cookie并且保存到本地</button>
+</view>
+<text>\n</text>
+<view class="page__bd page__bd_spacing">
+      <button class="weui-btn" type="primary" bindtap='sendCookie'>读取本地cookie并发送cookie</button></view> -->

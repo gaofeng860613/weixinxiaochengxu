@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
+
+<!-- --- -->
+  <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd">您关心的城市：</view>
+    <view class="weui-panel__bd">
+      <navigator url="" wx:for='{{weatherData}}' wx:key="*this" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <!-- 天气图表示例 -->
+        <image class="weui-media-box__thumb" src="/resources/icons/weather/sunny.svg" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{item.city_info.province}}-{{item.city_info.city}}-{{item.city_info.area}}</view>
+          <view class="weui-media-box__desc">
+            <text>温度：{{item.temperature}}度 风况：{{item.direct}}{{item.power}}</text>
+          </view>
+          <view class="weui-media-box__desc">
+            <text>对湿度：{{item.humidity}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+  <button class="weui-btn" type="primary" bindtap="network_request">网络请求</button>

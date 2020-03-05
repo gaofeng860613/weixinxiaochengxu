@@ -1,0 +1,4 @@
+<!--pages/weixin/weixin.wxml-->
+<text>pages/weixin/weixin.wxml</text>
+<view>这是微信界面</view>
+<button bindtap="onNavigatorTap">跳转界面</button>

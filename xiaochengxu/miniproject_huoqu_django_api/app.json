@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/apps/apps",
+    "pages/logs/logs",
+    "pages/imagetexts/imagetexts",
+    "pages/weixin/weixin",
+    "pages/zfb/zfb",
+    "pages/joke/joke",
+    "pages/login/login",
+    "pages/homepage/homepage",
+    "pages/picker/picker",
+    "pages/stock/stock"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },
+    {
+      "pagePath": "pages/apps/apps",
+      "text": "应用",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },
+    {
+      "pagePath":     
+      "pages/imagetexts/imagetexts",
+      "text": "图文",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },
+    {
+      "pagePath": "pages/login/login",
+      "text": "登陆",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },
+    {
+      "pagePath": "pages/homepage/homepage",
+      "text": "个人",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

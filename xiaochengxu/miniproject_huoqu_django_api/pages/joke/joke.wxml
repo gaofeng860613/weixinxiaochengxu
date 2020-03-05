@@ -1,0 +1,11 @@
+<!--pages/joke/joke.wxml-->
+<!-- <view style="text-align:center;"><text>你要的笑话段子来了</text></view>
+<view wx:for="{{content}}" wx:key="*this">
+<textarea >{{item.content}}</textarea>
+</view> -->
+
+
+<view class="container"><text>你要的笑话段子来了</text></view>
+<view wx:for="{{content}}" wx:key="*this">
+  <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{item.content}}\n\n</text>
+</view>

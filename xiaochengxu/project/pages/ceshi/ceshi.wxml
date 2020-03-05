@@ -1,0 +1,3 @@
+<!--pages/ceshi/ceshi.wxml-->
+<text>pages/ceshi/ceshi.wxml</text>
+<view bindtap="ceshi">我是ceshi</view>
